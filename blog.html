@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/0308e04451.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+        <title>RV College of Engineering</title>
+</head>
+
+<body>
+
+    <!----Header---->
+    <section class="sub-header">
+        <nav>
+            <!--a href="#"><img src="images/logo.png" alt="Logo"></a-->
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="blog-text-box">
+            <h1>Our Certificates & Online Programs For 2023</h1>
+        </div>
+    </section>
+
+    <!----Blog Page Content---->
+    <section class="blog">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="Blog Image">
+                <h2>Our Certificates & Online Programs For 2023</h2>
+                <p>
+                    
+
+
+                </p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Your Name">
+                        <input type="email" placeholder="Enter Your Email">
+                        <textarea rows="5" placeholder="Write a comment..."></textarea>
+                        <button type="submit" class="hero-btn-red">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Electronics and Communication(21)</span>
+                </div>
+                <div>
+                    <span>Electronics and TeleCommunication(12)</span>
+                </div>
+                <div>
+                    <span>Computer Science(08)</span>
+                </div>
+                <div>
+                    <span>Information science(13)</span>
+                </div>
+                <div>
+                    <span>Electricle and Electronics(15)</span>
+                </div>
+                <div>
+                    <span>Maching Learing(03)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----Footer---->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>RV College of Engineering is a private engineering college in Bangalore offering programs in various disciplines. It is known for academic excellence, modern facilities, and a vibrant campus life.</p>
+
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitch" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <!--p>Made with <i class="fa fa-heart" aria-hidden="true"></i> By <a href="#">MdRasen</a></p-->
+    </section>
+
+
+    <!---Javascript for toggole menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>

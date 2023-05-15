@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/0308e04451.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <title>RVCE- World Biggest University</title>
+</head>
+
+<body>
+
+    <!----Header---->
+    <section class="sub-header">
+        <nav>
+            <!--a href="#"><img src="images/logo.png" alt="Logo"></a-->
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="about-box">
+            <h1>About Us</h1>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world largest university</h1>
+                <p>RV College of Engineering is a private engineering college located in Bangalore, India. It was established in 1963 and is affiliated with Visvesvaraya Technological University (VTU). The college offers undergraduate, postgraduate, and doctoral programs in various engineering disciplines such as Computer Science, Information Science, Electronics and Communication, Electrical and Electronics, Mechanical, Civil, Chemical, and Biotechnology.
+                    The college has a strong reputation for academic excellence and has consistently been ranked among the top engineering colleges in India. It has a state-of-the-art campus with modern facilities, including well-equipped labs, libraries, sports facilities, and student accommodation.A part from academics, the college has a vibrant campus life with a range of extracurricular activities and clubs for students. It also has a strong industry collaboration and encourages students to participate in internships, research projects, and industry visits.
+                    RV College of Engineering is known for its strong alumni network, with many of its graduates holding prominent positions in the industry and academia.</p>
+                <a href="" class="hero-btn-red">EXPLORE NOW</a>
+            </div>
+
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!----Footer---->
+    <section class="footer">
+        <h4>ABOUT US</h4>
+        <p>RV College of Engineering is a private engineering college in Bangalore offering programs in various disciplines. It is known for academic excellence, modern facilities, and a vibrant campus life.
+            </p>
+
+        <div class="icons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitch" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <!--p>Made with <i class="fa fa-heart" aria-hidden="true"></i> By <a href="#">MdRasen</a></p-->
+    </section>
+
+
+    <!---Javascript for toggole menu--->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
